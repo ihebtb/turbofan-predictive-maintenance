@@ -62,17 +62,19 @@ Figures for all four subsets are in `reports/figures/`, raw numbers in `reports/
 
 ```mermaid
 flowchart LR
-    A[sensor history<br/>21 sensors x cycles] --> B[normalize per<br/>operating condition<br/>k-means on settings]
-    B --> C[drop flat sensors]
-    C --> D[30-cycle windows]
-    D --> E1[linear baseline<br/>last cycle]
-    D --> E2[gradient boosting<br/>last, mean, std, trend]
-    D --> E3[2-layer LSTM]
-    C --> F[health monitor<br/>Mahalanobis distance to<br/>early-life healthy state]
-    F --> G[alarm: 3 consecutive<br/>cycles above threshold]
-    F --> H[per-sensor contribution<br/>to the score]
-    E2 & E3 --> I[assessment + report]
-    G & H --> I
+    A["sensor history<br/>21 sensors x cycles"] --> B["normalize per<br/>operating condition<br/>k-means on settings"]
+    B --> C["drop flat sensors"]
+    C --> D["30-cycle windows"]
+    D --> E1["linear baseline<br/>last cycle"]
+    D --> E2["gradient boosting<br/>last, mean, std, trend"]
+    D --> E3["2-layer LSTM"]
+    C --> F["health monitor<br/>Mahalanobis distance to<br/>early-life healthy state"]
+    F --> G["alarm after 3 consecutive<br/>cycles above threshold"]
+    F --> H["per-sensor contribution<br/>to the score"]
+    E2 --> I["assessment and report"]
+    E3 --> I
+    G --> I
+    H --> I
 ```
 
 - **Operating conditions.** FD002 and FD004 mix six flight conditions; a healthy engine reads

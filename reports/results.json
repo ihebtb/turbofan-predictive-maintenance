@@ -1,0 +1,234 @@
+{
+  "FD001": {
+    "subset": "FD001",
+    "train_engines": 80,
+    "val_engines": 20,
+    "test_engines": 100,
+    "sensors_used": [
+      "s2",
+      "s3",
+      "s4",
+      "s7",
+      "s9",
+      "s11",
+      "s12",
+      "s14",
+      "s15",
+      "s17",
+      "s20",
+      "s21"
+    ],
+    "rul": {
+      "linear_last_cycle": {
+        "test_rmse": 21.73,
+        "test_nasa_score": 1059.8,
+        "val_rmse": 20.94
+      },
+      "gradient_boosting": {
+        "test_rmse": 14.02,
+        "test_nasa_score": 298.1,
+        "val_rmse": 12.3
+      },
+      "lstm": {
+        "test_rmse": 15.52,
+        "test_nasa_score": 380.3,
+        "val_rmse": 13.01
+      }
+    },
+    "best_model": "gradient_boosting",
+    "lstm_epochs_run": 16,
+    "anomaly": {
+      "run_to_failure": {
+        "engines": 20,
+        "detected_before_failure": 1.0,
+        "median_lead_time_cycles": 72.5,
+        "p10_lead_time_cycles": 43.5,
+        "alarm_in_healthy_phase": 0.0
+      },
+      "injected_sensor_faults": {
+        "injected_faults": 30,
+        "recall": 1.0,
+        "false_positive_rate": 0.0053,
+        "precision": 0.909
+      }
+    },
+    "seconds": 38.2
+  },
+  "FD002": {
+    "subset": "FD002",
+    "train_engines": 208,
+    "val_engines": 52,
+    "test_engines": 259,
+    "sensors_used": [
+      "s2",
+      "s3",
+      "s4",
+      "s6",
+      "s7",
+      "s8",
+      "s9",
+      "s10",
+      "s11",
+      "s12",
+      "s13",
+      "s14",
+      "s15",
+      "s16",
+      "s17",
+      "s20",
+      "s21"
+    ],
+    "rul": {
+      "linear_last_cycle": {
+        "test_rmse": 32.76,
+        "test_nasa_score": 20435.3,
+        "val_rmse": 21.18
+      },
+      "gradient_boosting": {
+        "test_rmse": 27.01,
+        "test_nasa_score": 8923.9,
+        "val_rmse": 15.28
+      },
+      "lstm": {
+        "test_rmse": 26.55,
+        "test_nasa_score": 7944.3,
+        "val_rmse": 14.91
+      }
+    },
+    "best_model": "lstm",
+    "lstm_epochs_run": 12,
+    "anomaly": {
+      "run_to_failure": {
+        "engines": 52,
+        "detected_before_failure": 1.0,
+        "median_lead_time_cycles": 46.0,
+        "p10_lead_time_cycles": 24.0,
+        "alarm_in_healthy_phase": 0.019
+      },
+      "injected_sensor_faults": {
+        "injected_faults": 78,
+        "recall": 0.372,
+        "false_positive_rate": 0.0054,
+        "precision": 0.784
+      }
+    },
+    "seconds": 94.3
+  },
+  "FD003": {
+    "subset": "FD003",
+    "train_engines": 80,
+    "val_engines": 20,
+    "test_engines": 100,
+    "sensors_used": [
+      "s2",
+      "s3",
+      "s4",
+      "s6",
+      "s7",
+      "s9",
+      "s10",
+      "s11",
+      "s12",
+      "s14",
+      "s15",
+      "s17",
+      "s20",
+      "s21"
+    ],
+    "rul": {
+      "linear_last_cycle": {
+        "test_rmse": 22.11,
+        "test_nasa_score": 1659.3,
+        "val_rmse": 21.4
+      },
+      "gradient_boosting": {
+        "test_rmse": 14.8,
+        "test_nasa_score": 351.9,
+        "val_rmse": 13.36
+      },
+      "lstm": {
+        "test_rmse": 16.61,
+        "test_nasa_score": 826.1,
+        "val_rmse": 15.25
+      }
+    },
+    "best_model": "gradient_boosting",
+    "lstm_epochs_run": 30,
+    "anomaly": {
+      "run_to_failure": {
+        "engines": 20,
+        "detected_before_failure": 0.6,
+        "median_lead_time_cycles": 53.5,
+        "p10_lead_time_cycles": 32.5,
+        "alarm_in_healthy_phase": 0.0
+      },
+      "injected_sensor_faults": {
+        "injected_faults": 30,
+        "recall": 1.0,
+        "false_positive_rate": 0.0053,
+        "precision": 0.909
+      }
+    },
+    "seconds": 78.4
+  },
+  "FD004": {
+    "subset": "FD004",
+    "train_engines": 200,
+    "val_engines": 49,
+    "test_engines": 248,
+    "sensors_used": [
+      "s2",
+      "s3",
+      "s4",
+      "s6",
+      "s7",
+      "s8",
+      "s9",
+      "s10",
+      "s11",
+      "s12",
+      "s13",
+      "s14",
+      "s15",
+      "s16",
+      "s17",
+      "s20",
+      "s21"
+    ],
+    "rul": {
+      "linear_last_cycle": {
+        "test_rmse": 34.25,
+        "test_nasa_score": 12431.2,
+        "val_rmse": 22.94
+      },
+      "gradient_boosting": {
+        "test_rmse": 27.63,
+        "test_nasa_score": 5563.6,
+        "val_rmse": 16.81
+      },
+      "lstm": {
+        "test_rmse": 27.54,
+        "test_nasa_score": 5215.3,
+        "val_rmse": 16.9
+      }
+    },
+    "best_model": "lstm",
+    "lstm_epochs_run": 15,
+    "anomaly": {
+      "run_to_failure": {
+        "engines": 49,
+        "detected_before_failure": 1.0,
+        "median_lead_time_cycles": 50.0,
+        "p10_lead_time_cycles": 14.0,
+        "alarm_in_healthy_phase": 0.02
+      },
+      "injected_sensor_faults": {
+        "injected_faults": 73,
+        "recall": 0.548,
+        "false_positive_rate": 0.005,
+        "precision": 0.851
+      }
+    },
+    "seconds": 97.9
+  }
+}

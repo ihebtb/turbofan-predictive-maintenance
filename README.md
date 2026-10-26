@@ -174,6 +174,5 @@ src/turbofan/
 
 ## Author
 
-**Iheb Tebai**, final-year Data Engineering student (AI & Machine Learning), looking for a
-6-month end-of-studies internship from February 2027.
+**Iheb Tebai**, final-year Data Engineering student (AI & Machine Learning), 
 [LinkedIn](https://www.linkedin.com/in/iheb-tebai-475717370) · [GitHub](https://github.com/ihebtb)
